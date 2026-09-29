@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 450" width="1200" height="450">
+  <defs>
+    <!-- Premium Metallic Orange Body Gradient -->
+    <linearGradient id="orangeBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6e26" />
+      <stop offset="40%" stop-color="#ff5512" />
+      <stop offset="85%" stop-color="#d83a05" />
+      <stop offset="100%" stop-color="#ab2900" />
+    </linearGradient>
+
+    <!-- Cockpit Glass Canopy Gradient -->
+    <linearGradient id="cockpitGlass" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#070a0e" />
+      <stop offset="50%" stop-color="#141c28" />
+      <stop offset="100%" stop-color="#070a0e" />
+    </linearGradient>
+
+    <!-- Black Carbon Accent Gradient -->
+    <linearGradient id="blackCarbon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e242d" />
+      <stop offset="100%" stop-color="#0a0d12" />
+    </linearGradient>
+
+    <!-- Specular Highlight for Metallic Polish -->
+    <linearGradient id="orangeHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.45" />
+      <stop offset="50%" stop-color="#ffaa75" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Soft Drop Shadow for Realistic Elevation -->
+    <filter id="carDepthShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="16" />
+      <feOffset dx="0" dy="18" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.5" />
+      </feComponentTransfer>
+      <feMerge> 
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g id="orange-black-concept-hypercar" filter="url(#carDepthShadow)">
+    <!-- Wide Performance Tires (Black) -->
+    <rect x="220" y="38" width="142" height="44" rx="10" fill="#06080b" stroke="#1e242d" stroke-width="2" />
+    <rect x="220" y="368" width="142" height="44" rx="10" fill="#06080b" stroke="#1e242d" stroke-width="2" />
+    <rect x="840" y="38" width="142" height="44" rx="10" fill="#06080b" stroke="#1e242d" stroke-width="2" />
+    <rect x="840" y="368" width="142" height="44" rx="10" fill="#06080b" stroke="#1e242d" stroke-width="2" />
+
+    <!-- Dark Carbon Brake Calipers -->
+    <rect x="270" y="46" width="42" height="8" rx="2" fill="#1e242d" />
+    <rect x="270" y="396" width="42" height="8" rx="2" fill="#1e242d" />
+    <rect x="890" y="46" width="42" height="8" rx="2" fill="#1e242d" />
+    <rect x="890" y="396" width="42" height="8" rx="2" fill="#1e242d" />
+
+    <!-- Main Aerodynamic Body Chassis (Vibrant Metallic Orange) -->
+    <path d="M 160,225 
+             C 160,158 210,88 320,78 
+             L 760,78 
+             C 900,78 1040,128 1090,188 
+             L 1110,225 
+             L 1090,262 
+             C 1040,322 900,372 760,372 
+             L 320,372 
+             C 210,362 160,292 160,225 Z" 
+          fill="url(#orangeBody)" stroke="#b82e00" stroke-width="3" />
+
+    <!-- Specular Highlight Strip along Top Shoulder -->
+    <path d="M 165,225 C 165,162 212,92 320,82 L 760,82 C 895,82 1035,130 1085,190" fill="none" stroke="url(#orangeHighlight)" stroke-width="2.5" />
+
+    <!-- Front Black Carbon Splitter -->
+    <path d="M 1070,185 L 1145,210 L 1145,240 L 1070,265 Z" fill="url(#blackCarbon)" stroke="#141820" stroke-width="2" />
+
+    <!-- Black Side Intake Vents -->
+    <path d="M 340,78 L 440,118 L 440,132 L 340,88 Z" fill="#080a0f" />
+    <path d="M 340,372 L 440,332 L 440,318 L 340,362 Z" fill="#080a0f" />
+
+    <!-- Black Hood Heat Extraction Vents -->
+    <polygon points="900,175 975,195 975,205 900,195" fill="#080a0f" />
+    <polygon points="900,275 975,255 975,245 900,255" fill="#080a0f" />
+    <line x1="910" y1="187" x2="965" y2="201" stroke="#ff8040" stroke-width="2" />
+    <line x1="910" y1="263" x2="965" y2="249" stroke="#ff8040" stroke-width="2" />
+
+    <!-- Sleek Glass Cockpit Canopy (Dark Glass) -->
+    <path d="M 480,118 
+             C 620,118 740,136 800,183 
+             L 800,267 
+             C 740,314 620,332 480,332 
+             C 420,332 380,302 380,225 
+             C 380,148 420,118 480,118 Z" 
+          fill="url(#cockpitGlass)" stroke="#1a222e" stroke-width="3" />
+
+    <!-- White Glass Reflection Highlight -->
+    <path d="M 490,132 C 610,132 710,148 765,188 C 725,158 625,145 490,145 Z" fill="#ffffff" opacity="0.3" />
+
+    <!-- Carbon Fiber Roof Spine -->
+    <path d="M 480,138 C 580,138 680,153 730,193 L 730,257 C 680,297 580,312 480,312 C 440,312 420,282 420,225 C 420,168 440,138 480,138 Z" fill="#080b10" />
+
+    <!-- Spine Highlight Line -->
+    <line x1="400" y1="225" x2="760" y2="225" stroke="#ffffff" stroke-width="2" opacity="0.6" />
+
+    <!-- Black Side Mirrors with Orange Accent Tips -->
+    <path d="M 720,70 L 760,48 L 780,73 Z" fill="#141820" stroke="#ff5512" stroke-width="1.5" />
+    <path d="M 720,380 L 760,402 L 780,377 Z" fill="#141820" stroke="#ff5512" stroke-width="1.5" />
+
+    <!-- Bright LED Headlight Strips (Pure White + Orange Glow) -->
+    <polygon points="1020,152 1075,173 1060,183 1010,162" fill="#ffffff" />
+    <polygon points="1020,298 1075,277 1060,267 1010,288" fill="#ffffff" />
+    <polyline points="1022,154 1078,175" stroke="#ffe0d0" stroke-width="3" />
+    <polyline points="1022,296 1078,275" stroke="#ffe0d0" stroke-width="3" />
+
+    <!-- Black Rear Diffuser & Red/Orange Light Bar -->
+    <rect x="150" y="140" width="12" height="170" rx="4" fill="#080a0f" />
+    <rect x="158" y="150" width="6" height="150" rx="3" fill="#ff3300" />
+  </g>
+</svg>

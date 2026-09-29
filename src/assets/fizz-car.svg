@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" width="600" height="240">
+  <defs>
+    <!-- Simple flat colors, no complex gradients -->
+  </defs>
+  <g id="top-down-car">
+    <!-- Wheel shadows & tires -->
+    <rect x="110" y="25" width="70" height="22" rx="6" fill="#111111" />
+    <rect x="110" y="193" width="70" height="22" rx="6" fill="#111111" />
+    <rect x="420" y="25" width="70" height="22" rx="6" fill="#111111" />
+    <rect x="420" y="193" width="70" height="22" rx="6" fill="#111111" />
+
+    <!-- Main Car Body - Vibrant Orange -->
+    <path d="M 80,120 
+             C 80,85 105,50 150,45 
+             L 380,45 
+             C 450,45 520,70 545,100 
+             L 555,120 
+             L 545,140 
+             C 520,170 450,195 380,195 
+             L 150,195 
+             C 105,190 80,155 80,120 Z" 
+          fill="#ff5500" stroke="#d44000" stroke-width="3" />
+
+    <!-- Rear Wing / Spoiler Accent -->
+    <path d="M 75,70 L 105,65 L 105,175 L 75,170 Z" fill="#111111" />
+    <rect x="70" y="112" width="40" height="16" rx="3" fill="#ff5500" />
+
+    <!-- Hood Air Vent Intakes -->
+    <polygon points="460,95 490,105 490,115 460,110" fill="#1e1e1e" />
+    <polygon points="460,145 490,135 490,125 460,130" fill="#1e1e1e" />
+
+    <!-- Windshield & Glass Cabin Roof -->
+    <path d="M 240,65 
+             C 310,65 370,75 400,100 
+             L 400,140 
+             C 370,165 310,175 240,175 
+             C 210,175 190,160 190,120 
+             C 190,80 210,65 240,65 Z" 
+          fill="#16161a" />
+
+    <!-- Roof Panel Structure -->
+    <path d="M 240,75 C 290,75 340,82 365,105 L 365,135 C 340,158 290,165 240,165 C 220,165 210,150 210,120 C 210,90 220,75 240,75 Z" fill="#222226" />
+
+    <!-- Side Mirrors -->
+    <path d="M 370,42 L 390,30 L 400,45 Z" fill="#ff5500" />
+    <path d="M 370,198 L 390,210 L 400,195 Z" fill="#ff5500" />
+
+    <!-- Headlight Strips -->
+    <polygon points="515,85 540,95 530,100 510,90" fill="#ffffff" />
+    <polygon points="515,155 540,145 530,140 510,150" fill="#ffffff" />
+
+    <!-- Tail Lights -->
+    <rect x="80" y="75" width="6" height="35" rx="2" fill="#ff1a1a" />
+    <rect x="80" y="130" width="6" height="35" rx="2" fill="#ff1a1a" />
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Space Grotesk', 'Inter', 'Manrope', system-ui, sans-serif;
+  --font-heading: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+
+  --color-page-bg: #F7F8FA;
+  --color-navy-band: #071B35;
+  --color-navy-dark: #0A2342;
+  --color-car-orange: #FF5A1F;
+  --color-orange-bright: #FF641F;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background-color: #F7F8FA;
+  color: #071B35;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Masking Utilities for Physical Horizontal Sliding Reveal */
+.hero-text-mask {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.hero-band-mask {
+  overflow: hidden;
+}
+
+/* Custom Scrollbar for Clean White Theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F8FA;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF5A1F;
+}
